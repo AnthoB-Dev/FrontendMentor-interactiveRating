@@ -1,0 +1,134 @@
+.hidden {
+  display: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "overpass";
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "overpass";
+  src: url("/assets/fonts/Overpass-VariableFont_wght.ttf");
+}
+#background {
+  background-color: #121417;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#background #element {
+  width: 325px;
+  min-height: 360px;
+  background: #161b23;
+  background: -webkit-linear-gradient(0deg, #161b23 0%, rgba(38, 46, 56, 0.9) 100%);
+  background: linear-gradient(0deg, #161b23 0%, rgba(38, 46, 56, 0.9) 100%);
+  margin: 0 25px;
+  padding: 25px 22px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#background #element #star {
+  background-color: #252D37;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#background #element #title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 23px 0;
+}
+#background #element .paragraph {
+  font-size: 14px;
+  color: rgba(149, 158, 172, 0.6862745098);
+  line-height: 160%;
+}
+#background #element #rates {
+  margin: 34px 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+#background #element #rates input {
+  display: none;
+}
+#background #element #rates label {
+  width: 41px;
+  height: 41px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #252D37;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #7C8798;
+}
+#background #element #rates label:hover {
+  background-color: #7C8798;
+  color: #ffffff;
+}
+#background #element #button {
+  width: 100%;
+  min-height: 45px;
+  background-color: #FB7413;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8470588235);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+#background #element #button:hover {
+  background-color: #ffffff;
+  color: #FB7413;
+}
+
+.active {
+  background-color: #FB7413 !important;
+  color: #ffffff !important;
+}
+
+@media only screen and (min-width: 1300px) {
+  * {
+    font-size: 15px;
+  }
+  #background #element {
+    width: 409px;
+    min-height: 409px;
+  }
+  #background #element #title {
+    font-size: 28px;
+  }
+  #background #element .paragraph {
+    font-size: 15px;
+  }
+  #background #element #rates label {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

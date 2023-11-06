@@ -2,48 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Interactive rating component</title>
 </head>
 <body>
 
-  <!-- Rating state start -->
+  <main id="background">
+    
+    <div id="element">
 
-  How did we do?
+      <div id="star">
+        <img src="assets/images/icon-star.svg" alt="">
+      </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <h1 id="title">How did we do?</h1>
+      
+      <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-  1 2 3 4 5
+      <div id="rates">
+        <input type="checkbox" name="rating" id="rate1" value="1" class="rating">
+        <label for="rate1" class="rateLabel">1</label>
+        <input type="checkbox" name="rating" id="rate2" value="2" class="rating">
+        <label for="rate2" class="rateLabel">2</label>
+        <input type="checkbox" name="rating" id="rate3" value="3" class="rating">
+        <label for="rate3" class="rateLabel">3</label>
+        <input type="checkbox" name="rating" id="rate4" value="4" class="rating">
+        <label for="rate4" class="rateLabel">4</label>
+        <input type="checkbox" name="rating" id="rate5" value="5" class="rating">
+        <label for="rate5" class="rateLabel">5</label>
+      </div>
 
-  Submit
+      <button id="button">Submit</button>
 
-  <!-- Rating state end -->
+    </div>
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
+  </main>
+ 
+  <!-- You selected out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  don’t hesitate to get in touch! -->
 </body>
 </html>

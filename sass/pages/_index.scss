@@ -1,0 +1,136 @@
+#background {
+   background-color: $very-dark-blue;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   #element {
+      width: $eleSizeWidthMobile;
+      min-height: $eleSizeHeightMobile;
+      background: #161b23;
+      background: -webkit-linear-gradient(0deg, #161b23 0%, rgba(38, 46, 56, 0.9) 100%);
+      background: linear-gradient(0deg, #161b23 0%, rgba(38, 46, 56, 0.9) 100%);
+      margin: 0 25px;
+      padding: 25px 22px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+
+      #star {
+         background-color: $dark-blue;
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #title {
+         font-size: $fsMobileTitle;
+         font-weight: $fwBold;
+         color: $white;
+         margin: 23px 0;
+      }
+
+      .paragraph {
+         font-size: $fsMobileReg;
+         color: $light-grey;
+         line-height: 160%;
+      }
+
+      #rates {
+         margin: 34px 0 25px;
+         display: flex;
+         justify-content: space-between;
+         
+         input {
+            display: none;
+         }
+         
+         label {
+            width: 41px;
+            height: 41px;
+            font-size: 14px;
+            font-weight: $fwBold;
+            background-color: $dark-blue;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: $medium-grey;
+
+            &:hover {
+               background-color: $medium-grey;
+               color: $white;
+            }
+         }
+      }
+
+      #button {
+         width: 100%;
+         min-height: 45px;
+         background-color: $orange;
+         border-radius: 25px;
+         font-size: 15px;
+         font-weight: 700;
+         color: #ffffffd8;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         border: none;
+         cursor: pointer;
+
+         &:hover {
+            background-color: $white;
+            color: $orange;
+         }
+      }
+   }
+}
+
+.active {
+   background-color: $orange !important;
+   color: $white !important;
+}
+
+@media only screen and (min-width: 1300px) {
+   * {
+      font-size: $fsDesktopReg;
+   }
+
+   #background {
+
+      #element {
+         width: $eleSizeWidthDesktop;
+         min-height: $eleSizeHeightDesktop;
+         
+         #star {
+
+         }
+
+         #title {
+            font-size: $fsDesktopTitle;
+         }  
+         
+         .paragraph {
+            font-size: $fsDesktopReg;
+         }
+
+         #rates {
+
+            label {
+               width: 50px;
+               height: 50px;
+            }
+         }
+      }
+
+   }
+
+}
