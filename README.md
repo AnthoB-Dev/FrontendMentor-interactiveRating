@@ -30,7 +30,8 @@ Users should be able to:
 
 ## My process
 
-I started by creating a sketch in Figma based on the provided .png images in the project folder. Then, I worked on the HTML, CSS and JS, and finaly the responsiveness
+I started by creating a sketch in Figma based on the provided .png images in the project folder. Then, I worked on the HTML, CSS and JS, and finaly the responsiveness.
+I'm displaying the thanks part with a function that removes every nodes from the form then the form itself, and replacing it by a the new nodes to create the thanks part.
 
 ### Built with
 
