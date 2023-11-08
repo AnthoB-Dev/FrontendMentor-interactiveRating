@@ -107,6 +107,7 @@ html {
   letter-spacing: 1px;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 #background #element #button:hover {
   background-color: #ffffff;
@@ -159,6 +160,22 @@ html {
 .active {
   background-color: #FB7413 !important;
   color: #ffffff !important;
+}
+
+.error {
+  background-color: #121417;
+  color: rgb(255, 32, 32);
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  text-transform: none;
+  font-size: 13px;
+  width: max-content;
+  padding: 5px 15px;
+  user-select: none;
+  border: solid 1px rgb(255, 32, 32);
 }
 
 @media only screen and (min-width: 1024px) {
