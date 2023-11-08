@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- GitHub Live Site URL: [GitHub Page](https://anthob-dev.github.io/interactiveRating/)
+- GitHub Live Site URL: [GitHub Page](https://anthob-dev.github.io/FrontendMentor-interactiveRating/)
 
 ## My process
 
